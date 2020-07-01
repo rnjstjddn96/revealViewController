@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var leftBtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        leftBtn.target =  self.revealViewController()
+        leftBtn.action = #selector(SWRevealViewController.revealToggle(_:))
     }
 
 

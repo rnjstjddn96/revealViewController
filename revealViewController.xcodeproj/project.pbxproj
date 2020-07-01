@@ -13,6 +13,7 @@
 		EA08F3342490DFD4009B5680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA08F3322490DFD4009B5680 /* Main.storyboard */; };
 		EA08F3362490DFD6009B5680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA08F3352490DFD6009B5680 /* Assets.xcassets */; };
 		EA08F3392490DFD6009B5680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA08F3372490DFD6009B5680 /* LaunchScreen.storyboard */; };
+		EA08F3432490E03D009B5680 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08F3422490E03D009B5680 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		EA08F3352490DFD6009B5680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA08F3382490DFD6009B5680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA08F33A2490DFD6009B5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA08F3402490E03C009B5680 /* revealViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "revealViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA08F3412490E03D009B5680 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EA08F3422490E03D009B5680 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,14 @@
 			children = (
 				EA08F32C2490DFD4009B5680 /* AppDelegate.swift */,
 				EA08F32E2490DFD4009B5680 /* SceneDelegate.swift */,
+				EA08F3412490E03D009B5680 /* SWRevealViewController.h */,
+				EA08F3422490E03D009B5680 /* SWRevealViewController.m */,
 				EA08F3302490DFD4009B5680 /* ViewController.swift */,
 				EA08F3322490DFD4009B5680 /* Main.storyboard */,
 				EA08F3352490DFD6009B5680 /* Assets.xcassets */,
 				EA08F3372490DFD6009B5680 /* LaunchScreen.storyboard */,
 				EA08F33A2490DFD6009B5680 /* Info.plist */,
+				EA08F3402490E03C009B5680 /* revealViewController-Bridging-Header.h */,
 			);
 			path = revealViewController;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					EA08F3282490DFD4009B5680 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -141,6 +149,7 @@
 				EA08F3312490DFD4009B5680 /* ViewController.swift in Sources */,
 				EA08F32D2490DFD4009B5680 /* AppDelegate.swift in Sources */,
 				EA08F32F2490DFD4009B5680 /* SceneDelegate.swift in Sources */,
+				EA08F3432490E03D009B5680 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2VUB7Y3L2;
 				INFOPLIST_FILE = revealViewController/Info.plist;
@@ -293,6 +303,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KSW.revealViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "revealViewController/revealViewController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2VUB7Y3L2;
 				INFOPLIST_FILE = revealViewController/Info.plist;
@@ -311,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KSW.revealViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "revealViewController/revealViewController-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
